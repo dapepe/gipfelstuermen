@@ -1,0 +1,276 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Signika Negative', sans-serif;
+	font-size: 1.1em;
+	line-height: 1.7em;
+
+	background: url('../img/landscape.jpg');
+	background-size: cover;
+	background-position: center; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+#map {
+	height: 400px;
+	width: 100%;
+}
+
+#header {
+	/*
+	background: url('../img/landscape.jpg');
+	background-size: cover;
+	background-position: center; 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	*/
+	height: 100%;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+}
+#header > div {
+	background: url('../img/header.png');
+	background-size: cover;
+	background-position: center; 
+	background-repeat: no-repeat;
+	height: 100%;
+	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
+	position: relative;
+}
+#header .a-c {
+	padding-bottom: 30px;
+}
+#header img {
+	margin: 0 auto;
+}
+#headerbottom {
+	position: absolute;
+	bottom: 30px;
+	width: 100%;
+}
+ul#countdown {
+	position: relative;
+	top: 50%;
+	margin: 0 auto;
+	padding: 15px 0 20px 0;
+	color: #465056;
+	overflow: hidden;
+	font-size: 1em;
+	font-family: 'Nothing You Could Do', cursive;
+	font-weight: bold;
+}
+ul#countdown li {
+	margin: 0 -3px 0 0;
+	padding: 0;
+	display: inline-block;
+	font-size: 72px;
+	font-size: 6vw;
+	text-align: center;
+}    
+ul#countdown li .label {
+	color: #61696D;
+	font-size: 0.8em;
+}
+
+#header h1 {
+	color: #FFF;
+	font-weight: 300;
+}
+.btn-white {
+	border: 2px solid #FFF;
+	color: #FFF;
+	border-radius: 1.2em;
+	-moz-border-radius: 1.2em;
+	-webkit-border-radius: 1.2em;
+	-webkit-transition: background-color 0.5s, color 0.5s;
+	transition: background-color 0.5s, color 0.5s;
+	background-color: transparent;
+}
+.btn-white:hover {
+	background-color: #FFF;
+	color: #00a99d;
+}
+.btn-white:active {
+	background: #00a99d;
+	color: #FFF;
+}
+.btn-white > span {
+	margin-right: 0.3em;
+}
+
+#body {
+	background: url('../img/bg.png');
+}
+section p {
+	font-size: 1.2em;
+}
+section h3 {
+	color: #396075;
+	font-family: 'Nothing You Could Do', cursive;
+	font-size: 3em;
+	text-align: center;
+}
+section h3 img {
+	margin-bottom: 0.2em;
+}
+#footer a {
+	float: right;
+}
+#intro {
+}
+
+@-webkit-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@-moz-keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@keyframes ani-mouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+ .scroll-btn {
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	text-align: center;
+}
+.scroll-btn > p {
+  margin-left: -55px;
+}
+.scroll-btn > * {
+	display: inline-block;
+	line-height: 18px;
+	font-size: 13px;
+	font-weight: normal;
+	color: #7f8c8d;
+	color: #ffffff;
+	font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+	color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+	position: relative;
+	display: block;
+	width: 35px;
+	height: 55px;
+	margin: 0 auto 20px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	border: 3px solid white;
+	border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+	position: absolute;
+	display: block;
+	top: 29%;
+	left: 50%;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+	background: white;
+	border-radius: 50%;
+	-webkit-animation: ani-mouse 2.5s linear infinite;
+	-moz-animation: ani-mouse 2.5s linear infinite;
+	animation: ani-mouse 2.5s linear infinite;
+}
+
+.b-c {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.a-c {
+	text-align: center;
+}
+
+.font-intro {
+	font-size: 1.5em;
+}
+
+.ptop-10 {
+	padding-top: 10px;
+}
+.pbottom-10 {
+	padding-bottom: 10px;
+}
+.pleft-10 {
+	padding-left: 10px;
+}
+.pright-10 {
+	padding-right: 10px;
+}
+
+.ptop-30 {
+	padding-top: 30px;
+}
+.pbottom-30 {
+	padding-bottom: 30px;
+}
+.pleft-30 {
+	padding-left: 30px;
+}
+.pright-30 {
+	padding-right: 30px;
+}
+
+
